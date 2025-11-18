@@ -14,18 +14,19 @@ const ComerciantesAmigos: React.FC = () => {
 
     const form = e.currentTarget;
     const formData = new FormData(form);
-    const data = Object.fromEntries(formData.entries());
+
+    // Convertir a URLSearchParams para evitar CORS
+    const params = new URLSearchParams();
+    formData.forEach((value, key) => {
+      params.append(key, value.toString());
+    });
 
     try {
-      // 👉 REEMPLAZAR por la URL del Web App de Google Apps Script
       const res = await fetch(
         "https://script.google.com/macros/s/AKfycbxcBdHuCwLnCJhadGd0h9Lhj3BJJsmYqp3Af_4L2LfPTr5MQWVuLTdlFEP5IX8C3FyqoQ/exec",
         {
           method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(data),
+          body: params, // Enviar como URLSearchParams
         }
       );
 
