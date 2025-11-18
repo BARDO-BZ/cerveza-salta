@@ -26,7 +26,7 @@ const ComerciantesAmigos: React.FC = () => {
         "https://script.google.com/macros/s/AKfycbxcBdHuCwLnCJhadGd0h9Lhj3BJJsmYqp3Af_4L2LfPTr5MQWVuLTdlFEP5IX8C3FyqoQ/exec",
         {
           method: "POST",
-          body: params, // Enviar como URLSearchParams
+          body: params,
         }
       );
 
@@ -39,6 +39,28 @@ const ComerciantesAmigos: React.FC = () => {
       setStatus("error");
     }
   };
+
+  // Si el envío fue exitoso, mostrar solo la imagen
+  if (status === "ok") {
+    return (
+      <>
+        <div className="banner-comerciantes">
+          <img
+            src="/images/comerciantes/frame-2.png"
+            alt="comerciantes amigos"
+          />
+        </div>
+
+        <div className="success-container">
+          <img
+            src="/images/comerciantes/success.png"
+            alt="¡Éxito! Ya estás participando"
+            className="success-image"
+          />
+        </div>
+      </>
+    );
+  }
 
   return (
     <>
@@ -119,12 +141,6 @@ const ComerciantesAmigos: React.FC = () => {
             {status === "sending" ? "Enviando..." : "Participar"}
           </button>
 
-          {status === "ok" && (
-            <p className="form-message success">
-              ¡Listo! Ya estás participando. Te enviamos un mail de
-              confirmación.
-            </p>
-          )}
           {status === "error" && (
             <p className="form-message error">
               Hubo un problema al enviar el formulario. Probá de nuevo en unos

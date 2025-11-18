@@ -124,3 +124,31 @@ input[type="checkbox"] + span {
 .form-message.error {
   color: red;
 }
+
+/* Contenedor para la imagen de éxito */
+.success-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  min-height: 400px;
+}
+
+.success-image {
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .success-container {
+    padding: 20px 10px;
+    min-height: 300px;
+  }
+
+  .success-image {
+    max-width: 100%;
+  }
+}
