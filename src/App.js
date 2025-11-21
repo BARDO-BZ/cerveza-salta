@@ -17,7 +17,6 @@ import GeneralIcon, { IconType } from "./Components/Atoms/GeneralIcon";
 import NavBar from "./Components/Organisms/NavBar";
 import Footer from "./Components/Organisms/Footer";
 import DropDownNavLink from "./Components/Atoms/DropDownNavLink";
-// import Button, {ButtonType} from "./Components/Atoms/Button";
 
 //Pages
 import Home from "./Components/Pages/Home";
@@ -33,13 +32,7 @@ function App() {
           <GeneralLink type={LinkType.General} isExternal={false} path="/us">
             Nosotros
           </GeneralLink>
-          {/* <GeneralLink
-            type={LinkType.General}
-            isExternal={false}
-            path="/comerciantes-amigos"
-          >
-            Comerciantes amigos
-          </GeneralLink> */}
+
           <DropDownNavLink linkTitle="Variedades">
             <GeneralLink
               type={LinkType.General}
@@ -56,7 +49,13 @@ function App() {
               Salta Negra
             </GeneralLink>
           </DropDownNavLink>
-          {/*<GeneralLink type={LinkType.General} isExternal={false} path='/beergarden'>Jardín cervecero</GeneralLink>*/}
+          <GeneralLink
+            type={LinkType.General}
+            isExternal={false}
+            path="/comerciantes-amigos"
+          >
+            Comerciantes amigos
+          </GeneralLink>
         </NavBar>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -72,6 +71,13 @@ function App() {
             </GeneralLink>
             <GeneralLink type={LinkType.General} isExternal={false} path="/us">
               Nosotros
+            </GeneralLink>
+            <GeneralLink
+              type={LinkType.General}
+              isExternal={false}
+              path="/comerciantes-amigos"
+            >
+              Comerciantes Amigos
             </GeneralLink>
             <GeneralLink type={LinkType.General} isExternal={false} path="/">
               Variedades
