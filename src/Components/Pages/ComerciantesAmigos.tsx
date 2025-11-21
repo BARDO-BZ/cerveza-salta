@@ -46,7 +46,7 @@ const ComerciantesAmigos: React.FC = () => {
       <>
         <div className="banner-comerciantes">
           <img
-            src="/images/comerciantes/frame-2.png"
+            src="/images/comerciantes/frame-3.svg"
             alt="comerciantes amigos"
           />
         </div>
@@ -65,7 +65,10 @@ const ComerciantesAmigos: React.FC = () => {
   return (
     <>
       <div className="banner-comerciantes">
-        <img src="/images/comerciantes/frame-2.png" alt="comerciantes amigos" />
+        <img
+          src="/images/comerciantes/bg-final.png"
+          alt="comerciantes amigos"
+        />
       </div>
 
       <div className="form-container">

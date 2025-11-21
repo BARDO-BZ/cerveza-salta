@@ -7,7 +7,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 50px 0;
+  padding: 20px 0 100px 0;
 }
 
 .banner-comerciantes {
@@ -22,19 +22,28 @@
   position: cover;
 }
 
-/* @media screen and (max-width: 500px) {
+@media screen and (max-width: 500px) {
   .banner-comerciantes img {
     width: auto;
     height: 80vh;
     object-fit: cover;
-    padding-top: 80px;
+    padding-top: 50px;
     background-color: #134378;
   }
-} */
+
+  .form-row {
+    flex-direction: column;
+  }
+
+  .comerciantes-form {
+    width: 90vw !important;
+  }
+}
 
 .form-title {
-  font-size: 2rem;
+  font-size: 3rem;
   margin-bottom: 0.5rem;
+  color: #134378;
 }
 
 .form-subtitle {
