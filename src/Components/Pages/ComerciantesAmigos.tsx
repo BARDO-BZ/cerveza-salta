@@ -72,9 +72,10 @@ const ComerciantesAmigos: React.FC = () => {
       </div>
 
       <div className="form-container">
-        <h1 className="form-title">Comerciantes amigos</h1>
+        <h1 className="form-title">COMERCIANTES AMIGOS</h1>
         <p className="form-subtitle">
-          Completá el formulario para participar de la acción.
+          TU ESFUERZO NOS LLENA DE ORGULLO Y MERECE RECOMPENSA. COMPLETÁ EL
+          FORMULARIO PARA PARTICIPAR POR INCREÍBLES PREMIOS.
         </p>
         <form className="comerciantes-form" onSubmit={handleSubmit}>
           <div className="form-row">
@@ -114,9 +115,14 @@ const ComerciantesAmigos: React.FC = () => {
           </div>
 
           <div className="form-row">
-            <label className="full-width">
+            <label>
               DIRECCIÓN DEL COMERCIO
               <input type="text" name="direccionComercio" required />
+            </label>
+
+            <label>
+              NOMBRE DEL COMERCIO
+              <input type="text" name="nombreComercio" required />
             </label>
           </div>
 
