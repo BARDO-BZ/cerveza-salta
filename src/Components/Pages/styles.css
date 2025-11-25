@@ -1,13 +1,13 @@
 .form-container {
   width: 100vw;
   height: auto;
-  background-image: url("../../../public/images/comerciantes/textura.png");
+  background-image: url("../../../public/images/comerciantes/fondo-form.png");
   background-repeat: repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 20px 0 100px 0;
+  padding: 0px 0 100px 0;
 }
 
 .banner-comerciantes {
@@ -41,13 +41,14 @@
 }
 
 .form-title {
-  font-size: 3rem;
+  font-size: 3.5rem;
   margin-bottom: 0.5rem;
-  color: #134378;
+  color: white;
 }
 
 .form-subtitle {
   margin-bottom: 1.5rem;
+  color: white;
 }
 
 .comerciantes-form {
@@ -69,6 +70,7 @@
   flex-direction: column;
   font-size: 0.9rem;
   gap: 0.3rem;
+  color: white;
 }
 
 .form-row input {
@@ -90,7 +92,7 @@
 }
 
 .checkbox-row span a {
-  color: blue;
+  /* color: blue; */
   text-decoration: underline;
 }
 

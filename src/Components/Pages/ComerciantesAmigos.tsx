@@ -46,7 +46,7 @@ const ComerciantesAmigos: React.FC = () => {
       <>
         <div className="banner-comerciantes">
           <img
-            src="/images/comerciantes/bg-final.png"
+            src="/images/comerciantes/ultima-version-banner.png"
             alt="comerciantes amigos"
           />
         </div>
@@ -66,7 +66,7 @@ const ComerciantesAmigos: React.FC = () => {
     <>
       <div className="banner-comerciantes">
         <img
-          src="/images/comerciantes/bg-final.png"
+          src="/images/comerciantes/ultima-version-banner.png"
           alt="comerciantes amigos"
         />
       </div>
