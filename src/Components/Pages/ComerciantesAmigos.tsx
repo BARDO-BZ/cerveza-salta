@@ -116,13 +116,18 @@ const ComerciantesAmigos: React.FC = () => {
 
           <div className="form-row">
             <label>
-              DIRECCIÓN DEL COMERCIO
-              <input type="text" name="direccionComercio" required />
+              ID DE CLIENTE
+              <input type="text" name="idDeCliente" required />
             </label>
 
             <label>
               NOMBRE DEL COMERCIO
               <input type="text" name="nombreComercio" required />
+            </label>
+
+            <label>
+              DIRECCION DEL COMERCIO
+              <input type="text" name="direccionComercio" required />
             </label>
           </div>
 
